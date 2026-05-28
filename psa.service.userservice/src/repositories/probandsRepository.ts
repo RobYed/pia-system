@@ -33,6 +33,8 @@ export class ProbandsRepository {
         status,
         complianceContact,
       })
-      .then((result) => result.map((row) => row.pseudonym));
+      .then((result: { pseudonym: string }[]) =>
+        result.map((row: { pseudonym: string }) => row.pseudonym)
+      );
   }
 }
