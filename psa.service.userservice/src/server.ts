@@ -18,7 +18,7 @@ import { config } from './config';
 import { connectDatabase, db } from './db';
 import { messageQueueService } from './services/messageQueueService';
 import { RegisterRoutes } from './publicRoutes.generated';
-import { ValidateError } from 'tsoa';
+import { ValidateError } from '@tsoa/runtime';
 import { PublicApiValidationError } from './errors';
 import { adminAuthClient, probandAuthClient } from './clients/authServerClient';
 
