@@ -6,7 +6,7 @@
 
 import { ErrorWithCausedBy, SpecificError } from '@pia/lib-service-core';
 import { StatusCodes } from 'http-status-codes';
-import { FieldErrors } from 'tsoa';
+import { FieldErrors } from '@tsoa/runtime';
 import { Boom } from '@hapi/boom';
 
 export class EntityNotFoundError extends Error {}
