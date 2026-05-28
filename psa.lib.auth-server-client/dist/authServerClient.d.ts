@@ -12,7 +12,7 @@ export interface AuthServerClientSettings {
 export declare class AuthServerClient extends KcAdminClient {
     private readonly clientSettings;
     private readonly reconnectInterval;
-    readonly connectionEvents: EventEmitter;
+    readonly connectionEvents: EventEmitter<[never]>;
     readonly realm: string;
     private waitForConnection;
     private currentInterval;
